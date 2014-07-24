@@ -12,6 +12,10 @@ from Phasty\Events\Eventable or use Phasty\Events\EventableTrait trait within yo
         echo $event->getData();
     });
     $obj->trigger("hello-event", "Hello world");
+
+Output:
+
+    Hellow world!
   
 And more:
 
@@ -39,6 +43,14 @@ And more:
     $btn->click();
     $btn->off("click", "sayHello");
     $btn->click();
+
+Output:
+
+    Before click handler
+    Hello!
+    Bye!
+    Before click handler
+    Bye!
 
 USAGE
 -----
