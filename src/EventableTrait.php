@@ -39,6 +39,8 @@ namespace Phasty\Events {
             if (is_null($callback)) {
                 $searchIn = [];
                 return;
+            } elseif (is_string($callback)) {
+                $callback = [ $this, $callback ];
             }
             $index = array_search($callback, $searchIn);
             if ($index === false) {
