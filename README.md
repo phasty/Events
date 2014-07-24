@@ -1,7 +1,7 @@
 Events
 ======
 
-Package supplies support of event handling on different kind of objects. To you this you just inherite you class
+Package supplies support of event handling on different kind of objects. To use this you just inherite your class
 from Phasty\Events\Eventable or use Phasty\Events\EventableTrait trait within you class:
 
     class SomeCoolClass extends Phasty\Events\Eventable {
