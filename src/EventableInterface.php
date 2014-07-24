@@ -1,5 +1,5 @@
 <?php
-namespace Daem\Events {
+namespace Phasty\Events {
     interface EventableInterface {
         /*
          * Добавить обработчик на событие

@@ -1,6 +1,6 @@
 <?php
-namespace Daem\Events {
-    use \Daem\Log\File as log;
+namespace Phasty\Events {
+    use \Phasty\Log\File as log;
     /*
      * Читает события из потока и воспроизводит их на слушателях
      */
@@ -15,9 +15,9 @@ namespace Daem\Events {
         /*
          * Конструктор
          *
-         * @param \Daem\Stream\Reader Обертка читающего потока
+         * @param \Phasty\Stream\Reader Обертка читающего потока
          */
-        public function __construct(\Daem\Stream\Stream $stream) {
+        public function __construct(\Phasty\Stream\Stream $stream) {
             $this->stream = $stream;
             $stream->on("data", [$this, "onData"]);
         }

@@ -1,5 +1,5 @@
 <?php
-namespace Daem\Events {
+namespace Phasty\Events {
     class Event {
         protected $time = 0;
         protected $eventName = null;

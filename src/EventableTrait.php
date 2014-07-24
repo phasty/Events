@@ -1,5 +1,5 @@
 <?php
-namespace Daem\Events {
+namespace Phasty\Events {
     trait EventableTrait {
         private $events = [];
         private $any    = [];
@@ -8,7 +8,7 @@ namespace Daem\Events {
          * Добавить обработчик на событие
          *
          * Прототип функции обратного вызова:
-         * function (\Daem\Events\Event $event, \Daem\Events\EventableInterface $that)
+         * function (\Phasty\Events\Event $event, \Phasty\Events\EventableInterface $that)
          * $event - объект события, $that - объект, на котором произошло событие
          *
          * @param $event mixin Название события или null, если обработчики для всех событий объекта
@@ -68,7 +68,7 @@ namespace Daem\Events {
         /*
          * Воспроизвести событие на объекте
          *
-         * @param $event        mixed Объект \Daem\Eventable\Event или имя события
+         * @param $event        mixed Объект \Phasty\Eventable\Event или имя события
          * @param $eventObject  mixed Данные события или предыдущее событие
          *
          * @return Возвращает результат последнего выполненного коллбэка
