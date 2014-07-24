@@ -16,7 +16,7 @@
     },
     "autoload" : {
         "psr-4" : {
-            "phasty\\Events\\" : "src"
+            "Phasty\\Events\\" : "src"
         }
     }
 }
