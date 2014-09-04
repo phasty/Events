@@ -117,8 +117,5 @@ namespace Phasty\Events {
         public function getHandledEvents() {
             return array_keys($this->events);
         }
-        public function __serialize() {
-
-        }
     }
 }
