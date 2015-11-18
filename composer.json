@@ -2,6 +2,7 @@
     "name" : "phasty/events",
     "description" : "PHP events library",
     "keywords" : ["php", "events"],
+    "license" : "MIT",
     "authors" : [
         {
             "name" : "Dmitry Cheremnykh",
@@ -9,14 +10,14 @@
         }
     ],
     "require" : {
-        "phasty/log" : "@dev"
+        "phasty/log" : ">=0.1"
     },
     "require-dev" : {
         "phpunit/phpunit" : "4.0.*"
     },
     "autoload" : {
         "psr-4" : {
-            "phasty\\Events\\" : "src"
+            "Phasty\\Events\\" : "src"
         }
     }
 }

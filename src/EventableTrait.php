@@ -39,6 +39,8 @@ namespace Phasty\Events {
             if (is_null($callback)) {
                 $searchIn = [];
                 return;
+            } elseif (is_string($callback)) {
+                $callback = [ $this, $callback ];
             }
             $index = array_search($callback, $searchIn);
             if ($index === false) {
@@ -114,9 +116,6 @@ namespace Phasty\Events {
 
         public function getHandledEvents() {
             return array_keys($this->events);
-        }
-        public function __serialize() {
-
         }
     }
 }

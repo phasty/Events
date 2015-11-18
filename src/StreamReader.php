@@ -10,7 +10,8 @@ namespace Phasty\Events {
          * Список слушателей
          */
         protected $listeners = [];
-        protected $stream = null;
+        protected $stream    = null;
+        protected $messages  = "";
 
         /*
          * Конструктор
